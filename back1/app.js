@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 const path=require('path')
 
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/";
+// var url = "mongodb://localhost:27017/";
 const bodyparser=require('body-parser') 
 connectDB()
 app.use(express.json());
