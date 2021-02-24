@@ -6,7 +6,7 @@ const myPlaintextPassword = 's0/\/\P4$$w0rD';
 const nodemailer = require('nodemailer');
 var MongoClient = require('mongodb').MongoClient;
 var session = require('express-session')
-var url = "mongodb://localhost:27017/";
+var url = "mongodb+srv://tulasi:tulasi@cluster0.wo2ow.mongodb.net/test?retryWrites=true&w=majority";
 var dbo
 var password1;
 var OTP
