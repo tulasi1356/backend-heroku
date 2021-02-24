@@ -35,16 +35,14 @@ var sess={
 }
 app.use(session(sess))
 app.use(express.static(path.join(__dirname,'dist/back')))
-
+app.get('/',function(req,res){
+  res.send("hello tulasi  akka");
+})
 
 app.use('/auth',auth);
 // app.use('/', routes);
 // app.use('/sell',sell);
-app.get('/*',function(req,res){
-  res.sendFile(path.join(__dirname,'/dist/back/index.html'))
-  // app.use(express.static(path.join(__dirname,'auth')))
-  
-})
+
 app.listen(PORT,'0.0.0.0', () => {
   console.log(`serving on port`)
 })
